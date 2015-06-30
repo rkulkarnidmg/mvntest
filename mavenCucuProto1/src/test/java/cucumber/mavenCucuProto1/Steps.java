@@ -6,21 +6,6 @@ import cucumber.api.java.en.When;
 
 public class Steps {
 
-	@Given("^This is my dummy$")
-	public void this_is_my_dummy() throws Throwable {
-		System.out.println("This is Test One");
-	}
-
-	@When("^This is my dummy2$")
-	public void this_is_my_dummy2() throws Throwable {
-		System.out.println("This is Test Two");
-	}
-
-	@Then("^This is my dummy3$")
-	public void this_is_my_dummy3() throws Throwable {
-		System.out.println("This is Test Three");
-	}
-
 	@Given("^I am on SFServiceCloud$")
 	public void i_am_on_SFServiceCloud() throws Throwable {
 		System.out.println("I am on SFServiceCloud");
@@ -56,4 +41,14 @@ public class Steps {
 		System.out.println("I can create an invoice");
 	}
 
+	@Given("^I am logged in a OP(\\d+)TSS$")
+	public void i_am_logged_in_a_OP_TSS(int arg1) throws Throwable {
+		System.out.println("I logged in as OP2");
+	}
+
+	@When("^I enter invalid iformation$")
+	public void i_enter_invalid_iformation() throws Throwable {
+		System.out.println("I Enter invalid information");
+	}
+	
 }
